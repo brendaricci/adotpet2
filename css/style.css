@@ -44,7 +44,8 @@ video {
     border-radius: 5px;
     margin-top: 20px;
 }
-/*-- header-starts --*/
+
+/******************** header ************************/
 
 .header-bottom {
     padding: 1.5em 0;
@@ -181,7 +182,8 @@ nav a:focus {
     font-weight: 400;
     text-transform: uppercase;
 }
-/*--- slider-css --*/
+
+/******************** slider ************************/
 
 .slider {
     position: relative;
@@ -269,7 +271,7 @@ ul.callbacks_tabs.callbacks2_tabs {
     z-index: 999;
     left: 45%;
 }
-/*-- responsive-mediaquries --*/
+/*-- responsive slider --*/
 
 @media(max-width:1024px) {
     .caption {
@@ -326,7 +328,7 @@ ul.callbacks_tabs.callbacks2_tabs {
         left: 4px;
     }
 }
-/* form */
+/******************** form ************************/
 
 .login-form {
     background: #2b2b36;
@@ -537,6 +539,8 @@ input[type="text"],
         padding: 10px 0;
     }
 }
+
+/******************** content  ************************/
 .about-section h3 {
     color: #000000;
     text-transform: capitalize;
@@ -662,14 +666,28 @@ input[type="text"],
     z-index: 1;
 }
 
-/************* register section *****************/
-#register {
+/************* after loged in section *****************/
+#padding , .padding {
     padding: 20px 0;
 }
-#register .form-group {
+#padding .form-group {
     margin-right: 10px;
 }
+#padding h2 {
+    margin: 10px 0 20px 0;
+}
+.pets .table > tbody > tr > td {
+    vertical-align: middle;
+}
+/* title */
+.jumbotron {
+    background: #333;
+}
+.jumbotron h1 {
+    color: #fff;
+}
 
+/******************** footer ************************/
 footer {
     background: #444444;
     padding: 5em 0;
@@ -778,6 +796,8 @@ i.googlepluse:hover {
     font-weight: 400;
     margin-left: 5px
 }
+
+
 /* General button style (reset) */
 
 .btn {
@@ -811,19 +831,31 @@ i.googlepluse:hover {
     transition: all 0.3s;
 }
 
+.green {
+    background: #76C031;
+    border: 0;
+}
+.green:hover {
+    background: #65A12C;
+}
+
 .btn-lg {
     padding: 10px 16px;
     font-size: 28px;
     line-height: 1.33;
-    border-radius: 6px;
-    background: #76C031;
-    border: 0;
+    border-radius: 0;
     float: right;
     margin: 30px 20px 0 0;
 }
-.btn-lg:hover {
-    background: #65A12C;
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 0;
+    float: right;
+    margin: 30px 20px 0 0;
 }
+
 
 /* Button 1c */
 
@@ -894,6 +926,8 @@ i.googlepluse:hover {
     text-indent: 100%;
     background: url("../img/to-top2.png") no-repeat 0px 0px;
 }
+
+
 /**** Blog ****/
 
 .section.group.example {
@@ -1183,8 +1217,8 @@ p.text {
     color: #999;
     font-weight: 600;
 }
-/*--contact--*/
-/************* Contact ********/
+
+/******************** contact ************************/
 
 .contact-form h2 {
     color: #000000;
@@ -1292,9 +1326,8 @@ p.text {
     width: 70%;
     margin-left: 5%;
 }
-/*-- Contact-ends-here --*/
-/**** photos-page ****/
-/***** Gallery *****/
+
+/******************** gallery ************************/
 
 .grid_1_of_4 {
     display: block;
@@ -1350,7 +1383,9 @@ p.text {
     margin-bottom: 1em;
     text-align: center;
 }
-/*--about--*/
+
+
+/******************** about ************************/
 
 .about {
     margin: 7em 0 5em;
@@ -1431,9 +1466,8 @@ p.text {
     line-height: 1.5em;
     margin-top: 10px;
 }
-/*--/about--*/
-/*--error--*/
 
+/******************** error label  ************************/
 .error {
     text-align: center;
     min-height: 670px;
@@ -1464,6 +1498,7 @@ p.text {
 .error-head {
     padding-top: 5em;
 }
+
 /* Bounce To Left */
 
 a.hvr-bounce-to-left {
@@ -1543,7 +1578,10 @@ a.hvr-bounce-to-left:active:before {
     font-weight: 400;
     margin-left: 5px;
 }
-/*-- responsive-design starts-here --*/
+
+
+
+/******************** responsive  ************************/
 
 @media screen and (max-width: 1366px) {
     .about-section h2 {

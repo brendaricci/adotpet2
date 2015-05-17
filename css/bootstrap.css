@@ -2163,8 +2163,8 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #fff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #5bc0de !important;
+  border-color: #46b8da !important;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -2245,8 +2245,8 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #d9534f !important;
+  border-color: #d43f3a !important;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -2333,10 +2333,10 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-xs,
 .btn-group-xs > .btn {
-  padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
+  padding: 1px 5px !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  border-radius: 3px !important;
 }
 .btn-block {
   display: block;
