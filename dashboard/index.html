@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADOTPET - Adote animais e dê-os um lar e muito amor </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link href="../css/dashboard.css" rel='stylesheet' type='text/css' />
+        <!-- jQuery -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/dashboard.js"></script>
+        <script src="../js/modal.js"></script>
+        <!-- css -->
+        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- navigation -->
+        <link href="../css/component.css" rel="stylesheet" type="text/css"  />
+        <!-- Google font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="../js/move-top.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <p class="social-media">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </p>
+                    <p class="phonenum">Atendimento: 0800-9999-999</p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html"><img src="../img/logo.png" alt="" /></a>
+                    </div>
+                    <span class="menu"></span>
+                    <div class="top-menu">
+                        <ul>
+                            <nav class="cl-effect-5">
+                                <li><a href="dashboard.html"><i class="fa fa-home"></i> Home</a></li>
+                                <li><a href="user-pets.html"><i class="fa fa-heart"></i> Meus Pet's</a></li>
+                                <li><a href="user-alter.html"><i class="fa fa-cog"></i> Configurações</a></li>
+                                <li><a href="logout.html"><i class="fa fa-phone"></i> Sair</a></li>
+                            </nav>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </header>
+        <div class="jumbotron">
+            <div class="container">
+                <h1><i class="fa fa-smile-o"></i> Que tal adotar um PET?</h1>
+            </div>
+        </div>
+        <!-- pets -->
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-12 pets" id="padding">
+                    <div id="phone">
+                        <div id="app">
+                            <div class="header">
+                                <div class="top">
+                                    <span class="left">
+                                        <span class="fontawesome-circle"></span>
+                                        <span class="fontawesome-circle"></span>
+                                        <span class="fontawesome-circle-blank"></span>
+                                        <span class="fontawesome-signal"></span>
+                                    </span>
+                                    <span class="center clock"></span>
+                                    <span class="right">
+                                        <span>75%</span>
+                                        <div id="battery"></div>
+                                        <span class="fontawesome-bolt"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="people">
+                                <div class="person">
+                                    <img alt="Lara" src="../img/pets/gato/01/foto.jpg">
+                                    <span><strong>Lara</strong>, 3 meses</span>
+                                </div>
+                            </div>
+                            <div id="control">
+                                <div class="button no">
+                                    <a href="#" class="trigger"></a>
+                                </div>
+                                <div class="button info">
+                                    <a href="#info" data-toggle="modal" data-target=".bs-modal-sm" class="trigger"></a>
+                                </div>
+                                <div class="button yes">
+                                    <a href="#yes" data-toggle="modal" data-target=".bs-modal-mn" class="trigger"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <p style="color:#fff; text-align:center;">Copyright  <a href="#" style="color:#fff;">ADOTPET</a></p>
+                <div class="clearfix"></div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                var defaults = {
+                      containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear'
+                 };
+                */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+        <!-- info -->
+        <div class="modal fade bs-modal-sm" id="info" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade active in" id="signin">
+                                <h2>Informações da Lara</h2>
+                                <p>Nome: Lara</p>
+                                <p>Idade: 5 meses</p>
+                                <p>Atualemente está com: Maria</p>
+                                <p>Atual residência: Rua tal, numero tal.</p>
+                                <p>Telefone: (99)9999-9999</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Yes -->
+        <div class="modal fade bs-modal-mn" id="yes" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade active in" id="signin">
+                                <h2>Você quer adotar Lara?</h2>
+                                <p>Para que a gente fique sabendo que você realmente quer adotar esse petzinho, precisamos de algumas informações suas, ok? Fique tranquilo, nós asseguramos que não iremos divulgar qualquer dado.</p>
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="control-group">
+                                            <label class="control-label" for="nome">Nome:</label>
+                                            <div class="controls">
+                                                <input required="" id="nome" name="nome" type="text" class="form-control" class="input-medium" required="">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="email">E-mail:</label>
+                                            <div class="controls">
+                                                <input required="" id="email" name="email" type="text" class="form-control" class="input-medium" required="">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="telefone">Telefone:</label>
+                                            <div class="controls">
+                                                <input required="" id="telefone" name="telefone" type="text" class="form-control" class="input-medium" required="">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label"></label>
+                                            <div class="controls">
+                                                <label class="checkbox inline" for="rememberme-0">
+                                                    <input type="checkbox" name="lembredemim" id="lembredemim" value="Remember me">
+                                                    Estou ciente dos termos de Política e Privacidade do ADOTPET.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="controls">
+                                            <button id="entrar" name="entrar" class="btn btn-success">Quero adotar!</button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
